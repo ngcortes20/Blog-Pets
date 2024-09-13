@@ -1,123 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <title>The Blog Site Team 5</title>
+  <title>Pet Lovers - Quiénes Somos</title>
+  <style>
+    /* Ajusta la altura de las imágenes */
+    .card-img-top {
+      width: 100%;
+      height: 550px; /* Ajusta la altura a 550px */
+      object-fit: cover;
+    }
+
+    /* Asegura que las tarjetas se adapten al contenido */
+    .card {
+      min-height: 100%;
+    }
+
+    /* Fondo de color red-300 para el texto */
+    .bg-red-300 {
+      background-color: #f87171; /* Este es el código del color red-300 en Tailwind CSS */
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 
-<body class="somos">
-
-  <nav>
-  <ul class="menu">
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="index2.html">Quiénes Somos</a></li>
-    <li><a href="index3.html">Contacto</a></li>
-  </ul>
- </nav>
-
- <main>
-  <section id="about-us">
-      <h1>¿Quiénes somos?</h1>
-      <p>Pet Lovers, un grupo de amantes de los animales decididos a crear un blog y dedicarnos a 
-          compartir nuestras experiencias y conocimientos del cuidado y bienestar de nuestras mascotas.
-          Brindamos consejos prácticos y entretenimiento para todos.</p>
-      
-      <h2>Nosotr@s</h2>
-      <p>Cada un@ de nuestr@s peludos aporta una experiencia única al blog:</p>
-      <div class="pet-list">
-          <div class="pet-box">
-              <div class="image-border">
-                  <img src="./photos/Morita.png" alt="Morita" class="pet-image">
-              </div>
-              <strong>Morita</strong>
-              <h4 id="textoMorita">Es una perrita Shih tzu, tiene dos años, le gusta jugar, caminar y comer. 
-                  Es muy consentida y la consienten mucho, es tranquila y aveces es juiciosa.</h4>
-          </div>
-          <div class="pet-box">
-              <div class="image-border">
-                  <img src="./Pic/Lulu.png" alt="Lulú" class="pet-image">
-              </div>
-              <strong>Lulú</strong>
-              <h4 id="textoLulú">Tiene 3 años, adoptada a los dos meses. Le gusta dormir encima de las piernas 
-                  de la familia. Su hobbie es mirar por la ventana y, aunque es muy cariñosa y juguetona, 
-                  también es muy territorial y no le gustan otros animalitos. Le tiene miedo a los desconocidos.
-                  Siempre que suena el timbre, corre a esconderse.</h4>
-          </div>
-          <div class="pet-box">
-              <div class="image-border">
-                  <img src="./Pic/Roco.png" alt="Rocco" class="pet-image">
-              </div>
-              <strong>Rocco</strong>
-              <h4 id="textoRocco">Pointer inglés blanco y negro de 9 años, de nobleza y dulzura 
-                  incomparables. Su pelaje elegante y su mirada tierna siempre transmiten amor. 
-                  Aunque su apariencia es suave, es valiente y siempre está alerta para proteger 
-                  a su familia.</h4>
-          </div>
-          <div class="pet-box">
-              <div class="image-border">
-                  <img src="./Pic/Winy.png" alt="Winy" class="pet-image">
-              </div>
-              <strong>Winy</strong>
-              <h4 id="textoWiny">Es una perrita pequeña de 5 años, llena de energía y siempre dispuesta a jugar. 
-                  Es hiperactiva, cariñosa, y necesita compañía constante, pues no le gusta estar sola y tiende 
-                  a llorar cuando lo está. Sus actividades favoritas incluyen jugar con pelotas y correr sin 
-                  parar. Winy es un cruce entre un Pug y un Fresh Pooder.</h4>
-          </div>
-          <div class="pet-box">
-              <div class="image-border">
-                  <img src="./Pic/Manolo.png" alt="Manolo" class="pet-image">
-              </div>
-              <strong>Manolo</strong>
-              <h4 id="textoManolo">Fresh Pooder de 6 años, muy tranquilo y perezoso. Adora dormir y le encanta 
-                  despertarse tarde. Disfruta jugar y su energía se agota rápido, así que prefiere pasar el tiempo 
-                  siendo consentido o durmiendo cerca de alguien. Le fascina la pizza y es muy juicioso, siempre 
-                  buscando un poco de cariño y compañía en sus momentos de descanso.</h4>
-          </div>
-          <div class="pet-box">
-              <div class="image-border">
-                  <img src="./Pic/Oreon.png" alt="Oreon" class="pet-image">
-              </div>
-              <strong>Oreon</strong>
-              <h4 id="textoOreon">Es un gato  de 1 año, creció sin acompañantes gatunos por eso se le olvidó ser 
-                  gato a excepción de su instinto felino salvaje. No se baña como los gatos, no maúlla normal, 
-                  no salta altas superficies, le gusta salir a la calle, se hace el muerto, se sienta y da la 
-                  pata con tal que le den su yogurt griego. Vino a cambiar mi mundo y mi percepción de los gatos.</h4>
-          </div>
+<body class="somos bg-danger-subtle">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Pet Lovers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index2.html">Quiénes Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index3.html">Contacto</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
-      <h2>Nuestra misión</h2>
-      <p>Ayudamos a dueños de mascotas a ofrecer el mejor cuidado a sus animales, compartiendo conocimientos y 
-          experiencias que hemos adquirido a lo largo de los años. Apoyar a refugios y organizaciones de 
-          rescate como hogares de paso y promovemos la adopción responsable.</p>
-  </section>
-</main>
+  <main class="container mt-5">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <section id="about-us">
+          <h1 class="text-center mb-4 text-danger">¿Quiénes somos?</h1>
+          <p>Somos Pet Lovers, un grupo de amantes de los animales decididos a crear un blog y dedicarnos a compartir nuestras experiencias y conocimientos sobre el cuidado y bienestar de nuestras mascotas. Brindamos consejos prácticos y entretenimiento para todos los dueños de mascotas.</p>
 
+          <h2 class="text-danger">Nosotr@s</h2>
+          <p>Cada un@ de nuestr@s peludos aporta una experiencia única al blog:</p>
 
- <footer>
-  <div class="left">
-      <h3>Autores</h3>
-      <ul>
-          <li>Tatiana Campos</li>
-          <li>Nicole Gicel</li>
-          <li>Leydy Tarazona</li>
-          <li>Jelis Antolinez</li>
-          <li>Xiomara Sanchez</li>
-      </ul>
-  </div>
+          <div class="row gy-4">
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="./photos/Lulu.png" class="card-img-top" alt="Lulú">
+                <div class="card-body bg-red-300">
+                  <h5 class="card-title"><strong>Lulú</strong></h5>
+                  <p id="textoLulú">Tiene 3 años, adoptada a los dos meses. Le gusta dormir encima de las piernas de la familia. Su hobbie es mirar por la ventana y, aunque es muy cariñosa y juguetona, también es muy territorial y no le gustan otros animalitos. Le tiene miedo a los desconocidos. Siempre que suena el timbre, corre a esconderse.</p>
+                </div>
+              </div>
+            </div>
 
-  <div class="center">
-      <h3>Pet Lovers</h3>
-  </div>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="./photos/Roco.png" class="card-img-top" alt="Rocco">
+                <div class="card-body bg-red-300">
+                  <h5 class="card-title"><strong>Rocco</strong></h5>
+                  <p id="textoRocco">Pointer inglés blanco y negro de 9 años, de nobleza y dulzura incomparables. Su pelaje elegante y su mirada tierna siempre transmiten amor. Aunque su apariencia es suave, es valiente y siempre está alerta para proteger a su familia.</p>
+                </div>
+              </div>
+            </div>
 
-  <div class="right">
-      <p>Contacto: <a href="mailto:petlovers@gmail.com">petlovers@gmail.com</a></p>
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="./photos/Winy.png" class="card-img-top" alt="Winy">
+                <div class="card-body bg-red-300">
+                  <h5 class="card-title"><strong>Winy</strong></h5>
+                  <p id="textoWiny">Es una perrita pequeña de 5 años, llena de energía y siempre dispuesta a jugar. Es hiperactiva, cariñosa, y necesita compañía constante, pues no le gusta estar sola y tiende a llorar cuando lo está. Sus actividades favoritas incluyen jugar con pelotas y correr sin parar. Winy es un cruce entre un Pug y un Fresh Pooder.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="./photos/Manolo.png" class="card-img-top" alt="Manolo">
+                <div class="card-body bg-red-300">
+                  <h5 class="card-title"><strong>Manolo</strong></h5>
+                  <p id="textoManolo">Fresh Pooder de 6 años, muy tranquilo y perezoso. Adora dormir y le encanta despertarse tarde. Disfruta jugar y su energía se agota rápido, así que prefiere pasar el tiempo siendo consentido o durmiendo cerca de alguien. Le fascina la pizza y es muy juicioso, siempre buscando un poco de cariño y compañía en sus momentos de descanso.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="./photos/Oreon.png" class="card-img-top" alt="Oreon">
+                <div class="card-body bg-red-300">
+                  <h5 class="card-title"><strong>Oreon</strong></h5>
+                  <p id="textoOreon">Es un gato de 1 año, creció sin acompañantes gatunos por eso se le olvidó ser gato a excepción de su instinto felino salvaje. No se baña como los gatos, no maúlla normal, no salta altas superficies, le gusta salir a la calle, se hace el muerto, se sienta y da la pata con tal que le den su yogurt griego. Vino a cambiar mi mundo y mi percepción de los gatos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Nuestra misión</h2>
+          <p>Ayudamos a dueños de mascotas a ofrecer el mejor cuidado a sus animales, compartiendo conocimientos y experiencias que hemos adquirido a lo largo de los años. Apoyamos refugios y promovemos la adopción responsable.</p>
+        </section>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </main>
+
+  <footer class="bg-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Autores</h3>
+          <ul>
+            <li>Tatiana Campos</li>
+            <li>Nicole Gicel</li>
+            <li>Leydy Tarazona</li>
+            <li>Jelis Antolinez</li>
+            <li>Xiomara Sanchez</li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center">
+          <h3>Pet Lovers</h3>
+        </div>
+        <div class="col-md-4 text-end">
+          <p>Contacto: <a href="mailto:petlovers@gmail.com">petlovers@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
