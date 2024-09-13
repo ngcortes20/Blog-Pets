@@ -20,6 +20,7 @@ text-align: center;
   position: relative;
   justify-content: center;
   background-color: #624E88;
+  width: 100%;
 }
 
 .menu li {
